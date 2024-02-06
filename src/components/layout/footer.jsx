@@ -1,9 +1,11 @@
 import React from 'react';
+import Contact from '../section7';
 
 const Footer = () => {
   return (
-    <div className='px-[163px] pb-[150px] bg-[#04726C] mt-[-1px] text-white'>
-      <div className='flex justify-between'>
+    <div className='px-[163px] py-[150px] bg-[#04726C] mt-[-1px] text-white'>
+      <Contact />
+      <div className='flex justify-between pt-[100px]'>
         <div className='flex flex-col gap-[50px]'>
           <div className='text-[28px]'>Sitemap</div>
           <div className='flex gap-[50px] text-lg'>
