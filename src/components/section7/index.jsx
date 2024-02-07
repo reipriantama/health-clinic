@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../ui/button';
+import { FaArrowUpLong } from 'react-icons/fa6';
 
 const Contact = () => {
   return (
@@ -12,11 +13,43 @@ const Contact = () => {
             className=''
           />
         </div>
-        <div>arrow top</div>
+        <div className='flex justify-center items-center bg-white text-[#04726C] p-[10px] size-[55px]  rounded-full'>
+          {' '}
+          <FaArrowUpLong />{' '}
+        </div>
       </div>
       <div className='flex flex-col gap-[50px] py-[100px] border-y-[1px]'>
         <div className='text-[28px]'>We’ll call you back</div>
-        <div className=''>Input</div>
+        <div className='grid grid-cols-2 gap-[30px]'>
+          <input
+            className='w-[759px] flex items-center bg-transparent border-[1px] border-white px-[25px] py-[15px] rounded-full'
+            type='text'
+            placeholder='Full Name'
+          />
+          <select
+            name='article'
+            id='article'
+            className='w-[759px] flex items-center bg-transparent border-[1px] border-white px-[25px] py-[15px] rounded-full'
+          >
+            <option disabled selected>
+              How do you want to be called?
+            </option>
+          </select>
+          <select
+            name='article'
+            id='article'
+            className='w-[759px] flex items-center bg-transparent border-[1px] border-white px-[25px] py-[15px] rounded-full'
+          >
+            <option disabled selected>
+              Cover the topic the article
+            </option>
+          </select>
+          <input
+            className='w-[759px] flex items-center bg-transparent border-[1px] border-white px-[25px] py-[15px] rounded-full'
+            type='text'
+            placeholder='+01(___) ___ ___'
+          />
+        </div>
         <div className=''>
           <Button
             className='w-[184px] px-[60px] py-[20px] border-white bg-white h-[64px] text-[18px] border-[1px] text-[#04726C]'
