@@ -5,6 +5,7 @@ import Solution from '../../components/section1';
 import OurService from '../../components/section2';
 import WorkFlow from '../../components/section3';
 import OurDoctors from '../../components/section4';
+import Help from '../../components/section6';
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,8 @@ const LandingPage = () => {
       <OurService />
       <WorkFlow />
       <OurDoctors />
+      {/*  */}
+      <Help />
       <Footer />
     </div>
   );
