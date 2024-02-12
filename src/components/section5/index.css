@@ -1,0 +1,10 @@
+.swiper-pagination {
+  position: relative;
+  left: 45% !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #04726c;
+  width: 15px;
+  height: 15px;
+}
