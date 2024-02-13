@@ -31,10 +31,14 @@ const Reviews = () => {
   ];
 
   return (
-    <div className='px-[162px] pb-[150px]'>
+    <div className='sm:p-5 xl:px-[162px] xl:pb-[150px]'>
       <div className='flex flex-col items-center mb-[50px]'>
         <div className='text-[#04726C]'>Reviews</div>
-        <div className='text-[52px] font-bold text-center w-[675px]'>
+        <div
+          className='sm:text-3xl
+         xl:text-[52px] 
+         font-bold text-center w-[675px]'
+        >
           Feedback from our favorite customers
         </div>
       </div>
@@ -49,7 +53,7 @@ const Reviews = () => {
       >
         {reviewData.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className='flex '>
+            <div className='xl:flex '>
               <div className='flex gap-[26px]'>
                 <div>
                   <img
@@ -81,7 +85,7 @@ const Reviews = () => {
                   />
                 </div>
               </div>
-              <div className='w-[821px] flex flex-col gap-[45px] ml-[64px]'>
+              <div className='w-[821px] flex flex-col gap-[45px] xl:ml-[64px]'>
                 <div
                   className='radial-progress text-[#04726C] border-2'
                   style={{
@@ -93,7 +97,13 @@ const Reviews = () => {
                 >
                   <FaQuoteLeft />
                 </div>
-                <div className='text-[26px] italic'>{item.description}</div>
+                <div
+                  className='sm:w-[550px] sm:text-center
+                  xl:w-[821px]
+                text-[26px] italic'
+                >
+                  {item.description}
+                </div>
                 <div className='text-xl'>
                   <div className='flex gap-2'>
                     <IoIosStar className='text-[#FFBD14]' /> {item.rate}
