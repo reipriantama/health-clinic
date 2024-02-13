@@ -22,16 +22,16 @@ const Solution = () => {
   ];
 
   return (
-    <div className='py-[150px] pl-[116px] pr-[219px] flex justify-between'>
-      <div className='flex'>
+    <div className='sm:px-4 xl:py-[150px] xl:pl-[116px] xl:pr-[219px] xl:flex xl:justify-between'>
+      <div className='flex sm:mt-10'>
         <div className=' shadow-top'>
           <img
             src={`${process.env.PUBLIC_URL}/assets/section1/doctor.png`}
             alt=''
-            className='w-[753px] h-[665px] object-cover'
+            className='xl:w-[753px] xl:h-[665px] object-cover'
           />
         </div>
-        <div className='w-[341px] h-[412px] p-[30px] ml-[400px] mt-[63px] absolute flex flex-col gap-[30px] border-[1px] border-[#EBEBEB] bg-white shadow-lg'>
+        <div className='w-[341px] h-[412px] p-[30px] sm:mt-[270px] sm:ml-[267px] xl:ml-[400px] mt-[63px] absolute flex flex-col gap-[30px] border-[1px] border-[#EBEBEB] bg-white shadow-lg'>
           <div className='flex justify-between'>
             <div>
               <div className='text-[20px]'>Available doctor</div>
@@ -64,7 +64,7 @@ const Solution = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col gap-10 ml-[156px] text-[18px] py-[98px]'>
+      <div className='flex flex-col gap-10 xl:ml-[156px] text-[18px] py-[98px]'>
         <div className='text-[#04726C] mb-[-30px]'>Quick Solution</div>
         <div className='text-[52px] font-bold'>
           Easy same or next-day appointments

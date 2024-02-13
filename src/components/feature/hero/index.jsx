@@ -11,13 +11,13 @@ const Hero = () => {
       style={{ backgroundImage: `url(${backgroundImageUrl})` }}
     >
       <Navbar />
-      <div className='pt-[300px] pb-[89px] px-[163px] text-white '>
-        <div className='flex justify-between'>
-          <div className='text-[64px] w-[1022px]'>
+      <div className='sm:px-8 pt-[300px] pb-[89px] px-[163px] text-white '>
+        <div className='xl:justify-between xl:flex'>
+          <div className='sm:text-[40px] xl:text-[64px] xl:w-[1022px]'>
             Over a long period of work we have provided hundres of thousands of
             eye care services
           </div>
-          <div className='flex items-center text-[18px] py-[74.5px] pl-[113px] text-end'>
+          <div className='flex items-center text-[20px] py-[74.5px] pl-[113px] text-end'>
             It is a long established fact that a reader will be distracted by
             the readable.
           </div>

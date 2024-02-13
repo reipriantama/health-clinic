@@ -46,11 +46,11 @@ const OurDoctors = () => {
   ];
 
   return (
-    <div className='px-[162px] pb-[150px] text-[18px]'>
-      <div className='flex justify-between'>
+    <div className='sm:p-10 xl:px-[162px] xl:pb-[150px] text-[18px]'>
+      <div className='xl:flex xl:justify-between'>
         <div className='w-[945px] flex flex-col gap-[10px]'>
           <div className='text-[#04726C]'>Our Doctors</div>
-          <div className='text-[52px] font-bold'>
+          <div className='sm:text-4xl sm:w-[600px] sm:mb-5 xl:text-[52px] font-bold'>
             Meet our specialists surgeons and ophthalmologists
           </div>
         </div>
@@ -61,7 +61,11 @@ const OurDoctors = () => {
           />
         </div>
       </div>
-      <div className='mt-[50px] grid grid-cols-4 gap-[50px]'>
+      <div
+        className='mt-[50px] 
+      sm:flex sm:flex-col sm:items-center
+      xl:grid xl:grid-cols-4 xl:gap-[50px]'
+      >
         {dataDoctors.map((item, index) => (
           <div className='w-[377px] h-[548px] flex flex-col gap-[30px]'>
             <div className=''>
