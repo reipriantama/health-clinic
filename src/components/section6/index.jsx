@@ -42,7 +42,7 @@ const Help = () => {
         </div>
         <div
           className='sm:flex sm:flex-col sm:items-center
-        xl:flex xl:flex-row xl:pl-[88px] xl:items-center '
+         xl:flex-row xl:pl-[88px] '
         >
           <div
             className='sm:my-10
